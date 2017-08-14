@@ -53,6 +53,8 @@ int main()
 
 	system("pause");
 
+	system("pause");
+
 	/* 
 	THIS
 	COMMENT
