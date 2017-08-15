@@ -453,8 +453,9 @@ int main()
 	char sleep = 'n';
 	int vitamins = 0;
 	char dayTime = 'd';
+	char eaten = 'y';
 
-	cout << "You have met a baby dionsaur in battle!!! you need at least 5 points to beat the dino in battle." << endl;
+	cout << "You have met a baby dionsaur in battle!!! you need more points than the dino to win this difficult battle." << endl;
 	cout << "What is your strength on a scale of 1 to 10?" << endl;
 	cin >> strength;
 	cin.clear();
@@ -547,5 +548,34 @@ int main()
 	cin >> dayTime;
 	cin.clear();
 	cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-	if (day)
+	if (dayTime == 'd') 
+	{
+		battleWins++;
+		cout << "It's day time and you are able to clearly see how the battle is going, and you are able to see the dino wind up its tail for an attack, giving you enough time to evade." << endl;
+	}
+	else if (dayTime == 'n') 
+	{
+		dinoBattleWins++;
+		cout << "It's night time and you aren't able to clearly see, and out of nowhere the dino's tail slams across your body." << endl;
+	}
+	else 
+	{
+		//do the thing
+	}
+	system("pause");
+	cout << "Have you eaten yet today? y or n" << endl;
+	if (eaten == 'y') 
+	{
+		battleWins++;
+		cout << "You are full of energy from the great breakfast of insects and dirty river water from this morning, you watch as the dino begins to tire." << endl;
+	}
+	else if (eaten == 'n') 
+	{
+		dinoBattleWins++;
+		cout << "your stomache hurts as you were hoping to finally get a good meal from killing this baby dino. your stomach pangs are hindering your movement." << endl;
+	}
+	else () 
+	{
+		//do the thing
+	}
 }
