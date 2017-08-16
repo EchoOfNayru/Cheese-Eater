@@ -230,6 +230,70 @@ void HighLow()
 	}
 }
 
+//Challenge 4 -- to Upper or to Lower
+char toUpper(char a) 
+{
+	if (a <= 90 && a >= 65) {
+		a = a;
+	}
+	else if (a <= 122 && a >= 96) 
+	{
+		a = a - 32;
+	}
+
+	return a;
+}
+
+char toLower(char a) 
+{
+	if (a <= 90 && a >= 65) {
+		a = a + 32;
+	}
+	else if (a <= 122 && a >= 96)
+	{
+		a = a;
+	}
+
+	return a;
+}
+
+//Challenge 5 -- unit testing framework 
+void test(int a, int b) 
+{
+	if (a == b) 
+	{
+		cout << "yes" << endl;
+	}
+	else 
+	{
+		cout << "no" << endl;
+	}
+}
+
+void test(float a, float b) 
+{
+	if (a == b) 
+	{
+		cout << "yes" << endl;
+	}
+	else 
+	{
+		cout << "no" << endl;
+	}
+}
+
+void test(char a, char b) 
+{
+	if (a == b) 
+	{
+		cout << "yes" << endl;
+	}
+	else 
+	{
+		cout << "no" << endl;
+	}
+}
+
 
 int main() 
 {
@@ -269,6 +333,13 @@ int main()
 
 	cout << linearInterpolation(26, 362, 0.5) << endl;
 
+	cout << toUpper('A') << endl;
+	cout << toLower('A') << endl;
+
+	test(sumOfThreeIntergers(1, 2, 3), 6);
+	test(linearInterpolation(2, 4, 0.5), 3.f);
+	test(toUpper('a'), 'A');
+	
 	HighLow();
 
 	system("pause");
