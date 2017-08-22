@@ -155,6 +155,10 @@ void bubbleSortDec(int num[], int size)
 				num[j + 1] = temp;
 				flag = 1;
 			}
+			else 
+			{
+				flag = 0;
+			}
 		}
 	}
 
@@ -163,7 +167,7 @@ void bubbleSortDec(int num[], int size)
 
 int main() 
 {
-	int values[]{ 7, 9, 1, 5, 3};
+	int values[]{ 7, 9, 1, 5, 0};
 
 	//printNumbers(values, 5);
 
