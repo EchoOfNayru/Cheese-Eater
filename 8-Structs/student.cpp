@@ -42,13 +42,16 @@ int studentMedian(student scholars[], int size)
 			}
 		}
 	}
-	for (int i = 0; i < size; i++) 
+	
+	if (size % 2 == 0) 
 	{
-		if (i == size / 2) 
-		{
-			median = scholars[i].lastExam;
-		}
+		median = scholars[size / 2 - 1].lastExam;
 	}
+	else 
+	{
+		median = scholars[size / 2].lastExam;
+	}
+
 	return median;
 }
 
