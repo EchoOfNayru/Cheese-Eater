@@ -211,7 +211,7 @@ void guessTheNumber(int lower, int upper, int tries)
 	int answer = rand() % (upper - lower) + lower;
 	int guess = 0;
 
-	cout << answer << endl;
+	//cout << answer << endl;
 
 	cout << "Hi there! I'm going to generate a number between "<< lower <<" and " << upper << ". you have 5 tries to guess it!" << endl;
 	for (int i = 0; i < tries; i++) 
@@ -355,7 +355,7 @@ int main()
 
 	//gridGen(0, 0);
 
-	//guessTheNumber(1, 100, 5);
+	guessTheNumber(1, 100, 5);
 
 	//Fibonacci(0);
 
