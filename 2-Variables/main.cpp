@@ -190,7 +190,7 @@ int main()
 	JLife = 84 - years;
 	USLife = 79 - years;
 	SLLife = 50 - years;
-
+	
 
 
 		//output
